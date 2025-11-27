@@ -1,7 +1,9 @@
-import type { NextConfig } from "next";
+import { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  // Add this block:
+  devIndicators: false,
+  // ... rest of your config
 };
 
 export default nextConfig;
