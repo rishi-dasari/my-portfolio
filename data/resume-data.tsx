@@ -2,14 +2,14 @@
 // NOTE: We are using placeholder values and skipping icons for now.
 
 export const RESUME_DATA = {
-  name: "Your Name Here",
-  initials: "YN",
-  location: "Your City, State",
-  locationLink: "https://www.google.com/maps/place/Your+City",
-  about: "Full Stack Developer focused on building high-performance, accessible web applications.",
-  summary: "A passionate engineer with X years of experience, specializing in Next.js, React, and TypeScript.",
+  name: "Maharshi Dasari",
+  initials: "MD",
+  location: "San Francisco, CA",
+  locationLink: "https://www.google.com/maps/place/San+Francisco,+CA",
+  about: "Data Wizard, Vibe Developer, Cloud & AI Enthusiast",
+  summary: "Turning data into decisions → 25% better forecasts, 40% less manual work | Data Scientist | AI/ML & GenAI Engineer | Python, SQL, PySpark, LangChain, RAG | Forecasting, A/B Testing, ETL & BI",
   avatarUrl: "/profile-photo.jpg", // Create this file in the 'public' folder later
-  personalWebsiteUrl: "https://yourwebsite.com",
+  // personalWebsiteUrl: "https://yourwebsite.com",
   contact: {
     email: "youremail@domain.com",
     tel: "+1234567890",
@@ -42,45 +42,41 @@ export const RESUME_DATA = {
   ],
   work: [
     {
-      company: "Acme Corp",
-      link: "https://acmecorp.com",
+      company: "Forte Group",
       badges: ["Remote", "Full-time"],
-      title: "Senior Software Engineer",
-      start: "2022",
-      end: "Present",
-      description: "Designed and built the next-gen client dashboard using Next.js and implemented performance monitoring.",
+      start: "2025",
+      end: "Present"
     },
   ],
-  skills: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
+  skills: ["Python","SQL","PySpark","LangChain","RAG","React", "Next.js", "TypeScript", "Tailwind CSS"],
   projects: [
     {
-      title: "Project Alpha",
+      title: "SQL Codebase Git Migration",
       techStack: [
-        "Side Project",
-        "TypeScript",
-        "Next.js",
-        "PostgreSQL"
+        "Work Project",
+        "Python",
+        "TSQL"
       ],
-      description: "A full-stack application for managing personal finances with real-time analytics.",
-      logo: "LogoPlaceholder", // You can use a URL here later
+      description: "Led the migration of a 4,000-object SQL codebase from shared folders to Git with branching rules, PR reviews, and tagged releases, giving the team its first reliable rollback path in production.",
+      logo: "LogoPlaceholder",
       link: {
-        label: "projectalpha.com",
-        href: "https://projectalpha.com/",
+        label: "SQL Codebase Git Migration",
+        href: "https://github.com/rishi-dasari/SQL-Codebase-Git-Migration",
       },
     },
     {
-      title: "Project Beta",
+      title: "Word Reveal",
       techStack: [
-        "Work Project",
-        "React",
-        "Redux",
-        "Java",
+        "Side Project",
+        "Javascript",
+        "CSS",
+        "HTML",
       ],
-      description: "Implemented a custom component library that reduced build times by 20%.",
+      description: "Built a Wordle-inspired game using JavaScript, HTML, and CSS, featuring dynamic word lists and responsive design for an engaging user experience across devices.",
       logo: "LogoPlaceholder",
       link: {
-        label: "clientbeta.com",
-        href: "https://clientbeta.com/",
+        label: "Word Reveal",
+        href: "https://word-reveal-smoky.vercel.app/",
       },
     },
   ],
