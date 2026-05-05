@@ -8,7 +8,7 @@ import { Python } from "@/components/ui/svgs/python";
 export const DATA = {
   name: "Maharshi Dasari",
   initials: "MD",
-  url: "https://maharshidasari.com",
+  url: "https://rishidw.my",
   location: "San Francisco, CA",
   locationLink: "https://www.google.com/maps/place/San+Francisco,+CA",
   description:
