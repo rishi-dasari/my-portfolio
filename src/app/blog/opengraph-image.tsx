@@ -1,5 +1,7 @@
  
 import { ImageResponse } from "next/og";
+
+export const runtime = "edge";
 import { DATA } from "@/data/resume";
 
 export const alt = "Blog";

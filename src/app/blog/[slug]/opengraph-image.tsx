@@ -1,6 +1,8 @@
  
 
 import { ImageResponse } from "next/og";
+
+export const runtime = "edge";
 import { allPosts } from "content-collections";
 import { DATA } from "@/data/resume";
 
