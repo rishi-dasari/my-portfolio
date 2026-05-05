@@ -3,8 +3,8 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardHeader, CardContent } from "@/components/ui/card";
 
 interface Props {
-  title: string;
-  description: string;
+  title?: string;
+  description?: string;
   badges: readonly string[];
   link?: string;
   company?: string;
@@ -51,13 +51,14 @@ export function ResumeCard({
           </div>
         </div>
         {/* Only show title below company for work experience */}
-        {company && <h4 className="text-sm leading-none">{title}</h4>}
+        {company && title && <h4 className="text-sm leading-none">{title}</h4>}
       </CardHeader>
-      
-      {/* Description */}
-      <CardContent className="mt-2 text-sm">
-        {description}
-      </CardContent>
+
+      {description && (
+        <CardContent className="mt-2 text-sm">
+          {description}
+        </CardContent>
+      )}
     </Card>
   );
 }

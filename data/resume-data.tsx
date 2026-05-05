@@ -1,6 +1,16 @@
 // data/resume-data.tsx
 // NOTE: We are using placeholder values and skipping icons for now.
 
+type WorkItem = {
+  company: string;
+  link?: string;
+  badges: readonly string[];
+  title?: string;
+  start: string;
+  end: string;
+  description?: string;
+};
+
 export const RESUME_DATA = {
   name: "Maharshi Dasari",
   initials: "MD",
@@ -11,8 +21,8 @@ export const RESUME_DATA = {
   avatarUrl: "/profile-photo.jpg", // Create this file in the 'public' folder later
   // personalWebsiteUrl: "https://yourwebsite.com",
   contact: {
-    email: "youremail@domain.com",
-    tel: "+1234567890",
+    email: "maharshidasari5@gmail.com",
+    tel: "+12037233473",
     social: [
       {
         name: "GitHub",
@@ -47,7 +57,7 @@ export const RESUME_DATA = {
       start: "2025",
       end: "Present"
     },
-  ],
+  ] as readonly WorkItem[],
   skills: ["Python","SQL","PySpark","LangChain","RAG","React", "Next.js", "TypeScript", "Tailwind CSS"],
   projects: [
     {
