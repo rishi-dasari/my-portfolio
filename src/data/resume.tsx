@@ -133,7 +133,7 @@ export const DATA = {
       school: "KLEF University",
       href: "https://www.kluniversity.in/",
       degree: "Bachelor of Technology, Computer Science Engineering",
-      logoUrl: "/logos/klef.jpeg",
+      logoUrl: "/logos/klef.png",
       start: "2014",
       end: "2018",
     },
@@ -194,7 +194,7 @@ export const DATA = {
       issuer: "Forage / Goldman Sachs",
       dates: "Issued Mar 2026 · No Expiration Date",
       description: "",
-      image: "/certs/gs.png",
+      image: "/certs/GS.png",
       links: [
         {
           title: "Certificate",
