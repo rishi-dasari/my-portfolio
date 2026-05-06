@@ -158,7 +158,7 @@ export const DATA = {
     },
     {
       title: "Word Reveal",
-      href: "https://word-reveal-smoky.vercel.app/",
+      href: "https://word-reveal-kappa.vercel.app/",
       dates: "2023",
       active: true,
       description:"A Wordle-inspired game built with vanilla JavaScript, HTML, and CSS — dynamic word lists and responsive design for play across devices.",
@@ -166,7 +166,7 @@ export const DATA = {
       links: [
         {
           type: "Website",
-          href: "https://word-reveal-smoky.vercel.app/",
+          href: "https://word-reveal-kappa.vercel.app/",
           icon: <Icons.globe className="size-3" />,
         },
       ],
