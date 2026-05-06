@@ -4,6 +4,23 @@ import { ReactLight } from "@/components/ui/svgs/reactLight";
 import { NextjsIconDark } from "@/components/ui/svgs/nextjsIconDark";
 import { Typescript } from "@/components/ui/svgs/typescript";
 import { Python } from "@/components/ui/svgs/python";
+import { SQL } from "@/components/ui/svgs/sql";
+import { PySpark } from "@/components/ui/svgs/pyspark";
+import { Pandas } from "@/components/ui/svgs/pandas";
+import { ScikitLearn } from "@/components/ui/svgs/scikitLearn";
+import { MachineLearning } from "@/components/ui/svgs/machineLearning";
+import { RAG } from "@/components/ui/svgs/rag";
+import { Jupyter } from "@/components/ui/svgs/jupyter";
+import { Snowflake } from "@/components/ui/svgs/snowflake";
+import { Databricks } from "@/components/ui/svgs/databricks";
+import { Postgresql } from "@/components/ui/svgs/postgresql";
+import { AWS } from "@/components/ui/svgs/aws";
+import { Azure } from "@/components/ui/svgs/azure";
+import { PowerBI } from "@/components/ui/svgs/powerbi";
+import { Tableau } from "@/components/ui/svgs/tableau";
+import { Excel } from "@/components/ui/svgs/excel";
+import { Git } from "@/components/ui/svgs/git";
+import { VSCode } from "@/components/ui/svgs/vscode";
 
 export const DATA = {
   name: "Maharshi Dasari",
@@ -18,6 +35,23 @@ export const DATA = {
   avatarUrl: "/me.png",
   skills: [
     { name: "Python", icon: Python },
+    { name: "SQL", icon: SQL },
+    { name: "PySpark", icon: PySpark },
+    { name: "Pandas", icon: Pandas },
+    { name: "Scikit-learn", icon: ScikitLearn },
+    { name: "Machine Learning", icon: MachineLearning },
+    { name: "RAG", icon: RAG },
+    { name: "Jupyter", icon: Jupyter },
+    { name: "Snowflake", icon: Snowflake },
+    { name: "Databricks", icon: Databricks },
+    { name: "PostgreSQL", icon: Postgresql },
+    { name: "AWS", icon: AWS },
+    { name: "Azure", icon: Azure },
+    { name: "Power BI", icon: PowerBI },
+    { name: "Tableau", icon: Tableau },
+    { name: "Excel", icon: Excel },
+    { name: "Git", icon: Git },
+    { name: "VS Code", icon: VSCode },
     { name: "React", icon: ReactLight },
     { name: "Next.js", icon: NextjsIconDark },
     { name: "Typescript", icon: Typescript },
@@ -57,7 +91,7 @@ export const DATA = {
       href: "https://fortegroup.com",
       badges: ["Remote", "Full-time"],
       location: "Remote",
-      logoUrl: "https://media.licdn.com/dms/image/v2/D4E0BAQGeABICVDSa8g/company-logo_200_200/B4EZz3Xxa.IUAI-/0/1773676730477/fortegroup_logo?e=1779321600&v=beta&t=W2frd1kYpeyzbGbJK9QNLSNcZmjFXTxHnJeITlfhdHY",
+      logoUrl: "/logos/forte.jpeg",
       title: "",
       start: "2025",
       end: "Present",
@@ -68,7 +102,7 @@ export const DATA = {
       href: "https://www.lewisu.edu/",
       badges: ["Remote", "Part-time"],
       location: "Chicago, IL",
-      logoUrl: "https://media.licdn.com/dms/image/v2/D560BAQGNH7pbZEdYmA/company-logo_200_200/company-logo_200_200/0/1667406619996/lewis_university_logo?e=1779321600&v=beta&t=t2LsN1xFBQpZMgf4F1ZABkjyCejKYbAPGGP-RpClha8",
+      logoUrl: "/logos/lewis.jpeg",
       title: "",
       start: "2023",
       end: "2024",
@@ -79,7 +113,7 @@ export const DATA = {
       href: "https://connate.in/",
       badges: ["Inperson", "Full-time"],
       location: "Hyderabad, TN",
-      logoUrl: "https://connate.in/assets/img/Connateai_logo.jpg",
+      logoUrl: "/logos/connate.jpeg",
       title: "",
       start: "2020",
       end: "2022",
@@ -110,8 +144,7 @@ export const DATA = {
       href: "https://github.com/rishi-dasari/SQL-Codebase-Git-Migration",
       dates: "2024",
       active: true,
-      description:
-        "Led the migration of a 4,000-object SQL codebase from shared folders to Git with branching rules, PR reviews, and tagged releases — giving the team its first reliable rollback path in production.",
+      description:"Led the migration of a 4,000-object SQL codebase from shared folders to Git with branching rules, PR reviews, and tagged releases — giving the team its first reliable rollback path in production.",
       technologies: ["Python", "T-SQL", "Git"],
       links: [
         {
@@ -120,7 +153,7 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "",
+      image: "https://opengraph.githubassets.com/1/rishi-dasari/SQL-Codebase-Git-Migration",
       video: "",
     },
     {
@@ -128,8 +161,7 @@ export const DATA = {
       href: "https://word-reveal-smoky.vercel.app/",
       dates: "2023",
       active: true,
-      description:
-        "A Wordle-inspired game built with vanilla JavaScript, HTML, and CSS — dynamic word lists and responsive design for play across devices.",
+      description:"A Wordle-inspired game built with vanilla JavaScript, HTML, and CSS — dynamic word lists and responsive design for play across devices.",
       technologies: ["JavaScript", "HTML", "CSS"],
       links: [
         {
@@ -138,7 +170,7 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "",
+      image: "/projects/wordreveal.png",
       video: "",
     },
   ],
@@ -148,7 +180,7 @@ export const DATA = {
       issuer: "Snowflake",
       dates: "Issued Mar 2026 · Mar 2028",
       description: "",
-      image: "",
+      image: "/certs/snowpro.png",
       links: [
         {
           title: "Verify",
@@ -162,12 +194,12 @@ export const DATA = {
       issuer: "Forage / Goldman Sachs",
       dates: "Issued Mar 2026 · No Expiration Date",
       description: "",
-      image: "",
+      image: "/certs/gs.png",
       links: [
         {
-          title: "Verify",
+          title: "Certificate",
           icon: <Icons.globe className="h-4 w-4" />,
-          href: "#",
+          href: "/certs/forage-risk.pdf",
         },
       ],
     },
@@ -176,12 +208,12 @@ export const DATA = {
       issuer: "Databricks",
       dates: "Issued Jun 2025 · No Expiration Date",
       description: "",
-      image: "",
+      image: "/certs/databricks.png",
       links: [
         {
-          title: "Verify",
+          title: "Certificate",
           icon: <Icons.globe className="h-4 w-4" />,
-          href: "#",
+          href: "/certs/db-aibi.pdf",
         },
       ],
     },
@@ -190,12 +222,12 @@ export const DATA = {
       issuer: "Databricks",
       dates: "Issued Jun 2025 · No Expiration Date",
       description: "",
-      image: "",
+      image: "/certs/databricks.png",
       links: [
         {
-          title: "Verify",
+          title: "Certificate",
           icon: <Icons.globe className="h-4 w-4" />,
-          href: "#",
+          href: "/certs/db-dm&g.pdf",
         },
       ],
     },
@@ -204,12 +236,12 @@ export const DATA = {
       issuer: "Databricks",
       dates: "Issued Jun 2025 · No Expiration Date",
       description: "",
-      image: "",
+      image: "/certs/databricks.png",
       links: [
         {
-          title: "Verify",
+          title: "Certificate",
           icon: <Icons.globe className="h-4 w-4" />,
-          href: "#",
+          href: "/certs/db-sql.pdf",
         },
       ],
     },
@@ -218,7 +250,7 @@ export const DATA = {
       issuer: "Coursera",
       dates: "Issued Oct 2024 · No Expiration Date",
       description: "Project-based course covering fundamental customer satisfaction survey techniques.",
-      image: "",
+      image: "/certs/cour.png",
       links: [
         {
           title: "Verify",
@@ -232,7 +264,7 @@ export const DATA = {
       issuer: "Coursera",
       dates: "Issued Oct 2024 · No Expiration Date",
       description: "Project-based course covering fundamental AWS billing concepts.",
-      image: "",
+      image: "/certs/cour.png",
       links: [
         {
           title: "Verify",
@@ -246,7 +278,7 @@ export const DATA = {
       issuer: "Coursera",
       dates: "Issued Sep 2024 · No Expiration Date",
       description: "Project-based course covering fundamental cost accounting concepts.",
-      image: "",
+      image: "/certs/cour.png",
       links: [
         {
           title: "Verify",
