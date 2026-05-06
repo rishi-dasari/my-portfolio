@@ -1,7 +1,6 @@
 "use client";
 
-import { AnimatePresence, motion, useInView, Variants } from "motion/react";
-import { useRef } from "react";
+import { motion, useReducedMotion, type Variants } from "motion/react";
 
 interface BlurFadeProps {
   children: React.ReactNode;
@@ -17,46 +16,63 @@ interface BlurFadeProps {
   inViewMargin?: string;
   blur?: string;
 }
+
 const BlurFade = ({
   children,
   className,
   variant,
-  duration = 0.4,
+  duration = 0.5,
   delay = 0,
-  yOffset = 6,
-  inView = false,
-  inViewMargin = "-50px",
+  yOffset = 8,
+  inView = true,
+  inViewMargin = "-80px",
   blur = "6px",
 }: BlurFadeProps) => {
-  const ref = useRef(null);
-  const inViewResult = useInView(ref, {
-    once: true,
-    ...(inViewMargin ? { margin: inViewMargin as any } : {})
-  });
-  const isInView = !inView || inViewResult;
+  const reduceMotion = useReducedMotion();
+
   const defaultVariants: Variants = {
-    hidden: { y: -yOffset, opacity: 0, filter: `blur(${blur})` },
-    visible: { y: 0, opacity: 1, filter: `blur(0px)` },
+    hidden: reduceMotion
+      ? { opacity: 0 }
+      : { y: yOffset, opacity: 0, filter: `blur(${blur})` },
+    visible: reduceMotion
+      ? { opacity: 1 }
+      : { y: 0, opacity: 1, filter: "blur(0px)" },
   };
   const combinedVariants = variant || defaultVariants;
-  return (
-    <AnimatePresence>
+
+  if (!inView) {
+    return (
       <motion.div
-        ref={ref}
         initial="hidden"
-        animate={isInView ? "visible" : "hidden"}
-        exit="hidden"
+        animate="visible"
         variants={combinedVariants}
         transition={{
-          delay: 0.04 + delay,
+          delay,
           duration,
-          ease: "easeOut",
+          ease: [0.16, 1, 0.3, 1],
         }}
         className={className}
       >
         {children}
       </motion.div>
-    </AnimatePresence>
+    );
+  }
+
+  return (
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, margin: inViewMargin as any }}
+      variants={combinedVariants}
+      transition={{
+        delay,
+        duration,
+        ease: [0.16, 1, 0.3, 1],
+      }}
+      className={className}
+    >
+      {children}
+    </motion.div>
   );
 };
 

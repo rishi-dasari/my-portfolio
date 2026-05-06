@@ -1,5 +1,13 @@
 import { Icons } from "@/components/icons";
-import { HomeIcon, NotebookIcon } from "lucide-react";
+import {
+  HomeIcon,
+  NotebookIcon,
+  UserIcon,
+  SparklesIcon,
+  FolderGit2Icon,
+  AwardIcon,
+  MailIcon,
+} from "lucide-react";
 import { ReactLight } from "@/components/ui/svgs/reactLight";
 import { NextjsIconDark } from "@/components/ui/svgs/nextjsIconDark";
 import { Typescript } from "@/components/ui/svgs/typescript";
@@ -59,6 +67,14 @@ export const DATA = {
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
     { href: "/blog", icon: NotebookIcon, label: "Blog" },
+  ],
+    sections: [
+    { id: "hero", label: "Top", icon: HomeIcon },
+    { id: "about", label: "About", icon: UserIcon },
+    { id: "skills", label: "Skills", icon: SparklesIcon },
+    { id: "projects", label: "Projects", icon: FolderGit2Icon },
+    { id: "certifications", label: "Certs", icon: AwardIcon },
+    { id: "contact", label: "Contact", icon: MailIcon },
   ],
   contact: {
     email: "maharshidasari5@gmail.com",
