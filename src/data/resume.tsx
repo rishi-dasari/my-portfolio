@@ -102,17 +102,17 @@ export const DATA = {
   },
 
   work: [
-    {
-      company: "Forte Group",
-      href: "https://fortegroup.com",
-      badges: ["Remote", "Full-time"],
-      location: "Remote",
-      logoUrl: "/logos/forte.jpeg",
-      title: "",
-      start: "2025",
-      end: "Present",
-      description: "",
-    },
+    // {
+    //   company: "Forte Group",
+    //   href: "https://fortegroup.com",
+    //   badges: ["Remote", "Full-time"],
+    //   location: "Remote",
+    //   logoUrl: "/logos/forte.jpeg",
+    //   title: "",
+    //   start: "2025",
+    //   end: "Present",
+    //   description: "",
+    // },
     {
       company: "Lewis University",
       href: "https://www.lewisu.edu/",
