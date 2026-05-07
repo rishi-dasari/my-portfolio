@@ -156,9 +156,26 @@ export const DATA = {
   ],
   projects: [
     {
+      title: "Customer Churn Intelligence Dashboard",
+      href: "https://customer-churn-intel.streamlit.app/",
+      dates: "2026",
+      active: true,
+      description:"Multi-table churn prediction tool that ingests three CSVs (customers, subscriptions, events), engineers leakage-safe features over monthly snapshots, trains an ensemble of seven models with a stacking meta-learner, and produces per-subscription churn probabilities with SHAP-based explanations",
+      technologies: ["Python", "T-SQL", "Git"],
+      links: [
+        {
+          type: "Source",
+          href: "https://customer-churn-intel.streamlit.app/",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/projects/churn.png",
+      video: "",
+    },
+    {
       title: "SQL Codebase Git Migration",
       href: "https://github.com/rishi-dasari/SQL-Codebase-Git-Migration",
-      dates: "2024",
+      dates: "2026",
       active: true,
       description:"Led the migration of a 4,000-object SQL codebase from shared folders to Git with branching rules, PR reviews, and tagged releases — giving the team its first reliable rollback path in production.",
       technologies: ["Python", "T-SQL", "Git"],
@@ -175,7 +192,7 @@ export const DATA = {
     {
       title: "Word Reveal",
       href: "https://word-reveal-kappa.vercel.app/",
-      dates: "2023",
+      dates: "2026",
       active: true,
       description:"A Wordle-inspired game built with vanilla JavaScript, HTML, and CSS — dynamic word lists and responsive design for play across devices.",
       technologies: ["JavaScript", "HTML", "CSS"],
