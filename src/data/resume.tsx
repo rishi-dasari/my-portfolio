@@ -156,6 +156,23 @@ export const DATA = {
   ],
   projects: [
     {
+      title: "Agentic Data Pipeline Accelerator",
+      href: "https://huggingface.co/spaces/rishi-d/agentic-data-pipeline",
+      dates: "2026",
+      active: true,
+      description:"Natural-language CSV transformation. Upload a CSV, describe a transform in plain English and a Groq-powered LLM agent generates and executes DuckDB SQL step by step",
+      technologies: ["Python", "T-SQL", "Git"],
+      links: [
+        {
+          type: "Source",
+          href: "https://huggingface.co/spaces/rishi-d/agentic-data-pipeline",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/projects/adpa.png",
+      video: "",
+    },
+    {
       title: "Customer Churn Intelligence Dashboard",
       href: "https://customer-churn-intel.streamlit.app/",
       dates: "2026",
